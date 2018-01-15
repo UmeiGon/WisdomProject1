@@ -8190,6 +8190,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1628562081986960, guid: 7fb39208586626849ae389889a8e6e76, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7fb39208586626849ae389889a8e6e76, type: 2}
   m_IsPrefabParent: 0
@@ -15730,7 +15734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &353883987
 Transform:
   m_ObjectHideFlags: 0
@@ -48530,7 +48534,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 391801108}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.6911692
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -55168,7 +55172,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 911635828}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.5293987
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -55371,6 +55375,10 @@ Prefab:
     - target: {fileID: 1570315247212814, guid: 5c5586266ef9b2949a7401e8954d9579, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1728146240335474, guid: 5c5586266ef9b2949a7401e8954d9579, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c5586266ef9b2949a7401e8954d9579, type: 2}
