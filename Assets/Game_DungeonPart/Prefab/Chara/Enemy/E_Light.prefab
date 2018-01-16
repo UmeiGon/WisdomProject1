@@ -1196,7 +1196,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1264162837888958}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1.0000005, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 4903536394572884}
@@ -1594,7 +1594,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1570315247212814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 0}
+  m_LocalPosition: {x: 15, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4547459373059578}
@@ -1704,8 +1704,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 40
-  m_Range: 6
+  m_Intensity: 9
+  m_Range: 12
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1844,6 +1844,7 @@ MonoBehaviour:
   hpGaugeShowTimeMax: 1
   moveVec: {x: 0, y: 0, z: 0}
   charaDir: {x: 0, y: 0, z: 0}
+  target: {fileID: 0}
   actAllowed: 0
   actStarted: 0
   acted: 0
@@ -1852,7 +1853,8 @@ MonoBehaviour:
     freezeTurn: 0
     paralizeTurn: 0
     atkUpTurn: 0
-    defUpTurn: 0
+    invincibleTurn: 0
+    spdUpTurn: 0
   deadObjPrefab: []
   type: 7
   myBodys: []
@@ -2026,7 +2028,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1268365555
+  randomSeed: 394845084
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -2074,7 +2076,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.79
+      scalar: 0.43
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -2177,9 +2179,9 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     startSize:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 0.25
-      minScalar: 0.1
+      minMaxState: 0
+      scalar: 0.42
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2218,7 +2220,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -2259,7 +2261,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -2469,7 +2471,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 4
+    type: 0
     angle: 15
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -2491,7 +2493,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.12
+      value: 0.61
       mode: 0
       spread: 0
       speed:
@@ -3127,7 +3129,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       scalar: 0
-      minScalar: 0
+      minScalar: -1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3167,8 +3169,8 @@ ParticleSystem:
     z:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
-      minScalar: 0
+      scalar: 1
+      minScalar: -1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5263,13 +5265,13 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 2
+  m_LengthScale: 3.74
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_RenderAlignment: 0
